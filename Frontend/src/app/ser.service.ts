@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http'
 })
 export class SerService {
 
-  apiUrl:String = 'http://localhost:2003/api'
+  apiUrl:string =`api`
+  // apiUrl:String = 'http://localhost:2003/api'
 
   constructor(private http:HttpClient) { }
 

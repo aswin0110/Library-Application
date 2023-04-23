@@ -183,6 +183,15 @@ app.delete('/api/book/:id', async(req, res)=>{
 
 })
 
+const path = require('path'); 
+
+app.use(express.static(`./dist/frontend`));
+
+app.get(`/*`, function(req, res) {
+    res.sendFile(path.join(__dirname + '/dist/frontend/index.html'));
+
+}); 
+
 
 
 
